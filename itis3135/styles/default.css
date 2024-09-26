@@ -10,6 +10,10 @@ h1, h2, p, ul {
   text-align: center;
 }
 
+.links,footer {
+  text-align: center;
+}
+
 .center-img {
   display: block;
   margin-left: auto;
