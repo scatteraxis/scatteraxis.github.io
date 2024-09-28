@@ -1,16 +1,34 @@
 * {
-  background-color: #621708;
+  font-family: sans-serif;
+  background-color: #972d07;
 }
 
-h1, h2, p, ul {
-  color: rgb(231, 191, 191);
+.hr {
+  height: 5px;
+  background-image: #972d07;
 }
 
-.center {
+.header, .footer, .footer > *, .header > *{
+  background-color: #ffb20f;
   text-align: center;
+  padding: 4px;
+  border-radius: 15px;
 }
 
-.links,footer {
+main, main > * {
+  background-color: #ff4b3e;
+  padding: 5px;
+  margin: 10px;
+  border-radius: 15px;
+}
+
+main > ul > li {
+  background-color: #ff4b3e;
+  padding: 0;
+  margin: 10px;
+}
+
+.center, h2 {
   text-align: center;
 }
 
