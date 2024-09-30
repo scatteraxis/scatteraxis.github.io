@@ -8,14 +8,14 @@ html {
   background-image: #972d07;
 }
 
-.header, .footer{
+.header, .footer {
   background-color: #ffb20f;
   text-align: center;
   padding: 4px;
   border-radius: 15px;
 }
 
-main {
+main, main > p, main > h2, main > h3 {
   background-color: #ff4b3e;
   padding: 5px;
   margin: 10px;
