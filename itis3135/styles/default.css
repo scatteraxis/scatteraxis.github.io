@@ -1,4 +1,4 @@
-* {
+html {
   font-family: sans-serif;
   background-color: #972d07;
 }
@@ -8,14 +8,14 @@
   background-image: #972d07;
 }
 
-.header, .footer, .footer > *, .header > *{
+.header, .footer{
   background-color: #ffb20f;
   text-align: center;
   padding: 4px;
   border-radius: 15px;
 }
 
-main, main > * {
+main {
   background-color: #ff4b3e;
   padding: 5px;
   margin: 10px;
