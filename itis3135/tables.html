@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="styles/default.css">
+
+<head>
+    <!-- Meta assignments -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ITITS-3135 Tables Practice</title>
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+    <!-- Header content -->
+</head>
+<header>
+    <div data-include="components/header.html"></div>
+</header>
+
+<body>
+    <main>
+        <h2>Activity #2 - HTML Tables - Company</h2>
+        <h3>My Tabular Data</h3>
+        <h3>Employee Data in Complex Table</h3>
+        <figure>
+            <table>
+                <tr>
+                    <th>Category</th>
+                    <th id="name" headers="blank">Name</th>
+                    <th id="email" headers="blank">Email</th>
+                    <th id="years" headers="blank">Years of Service</th>
+                    <th id="salary" headers="blank">Monthly Salary</th>
+                </tr>
+                <tr>
+                    <th id="design" headers="blank">Design Planning</th>
+                    <td headers="design name">Harman Deltahead</td>
+                    <td headers="design email">silvereyessee@ARCsnake.com</td>
+                    <td headers="design years">50</td>
+                    <td headers="design salary">$7,000,000</td>
+                </tr>
+                <tr>
+                    <th rowspan="3" id="tech" headers="blank">Technician</th>
+                    <td headers="tech name">Xenia Massive</td>
+                    <td headers="tech email">junglistmassive@ARCsnake.com</td>
+                    <td headers="tech years">15</td>
+                    <td headers="tech salary">$57,000</td>
+                </tr>
+                <tr>
+                    <td headers="tech name">Vandal ni Maken-ai</td>
+                    <td headers="tech email">vdcx@ARCsnake.com</td>
+                    <td headers="tech years">6</td>
+                    <td headers="tech salary">$60,000</td>
+                </tr>
+                <tr>
+                    <td headers="tech name">Greater Red</td>
+                    <td headers="tech email">red.on.the.morrow@ARCsnake.com</td>
+                    <td headers="tech years">13</td>
+                    <td headers="tech salary">$30,000</td>
+                </tr>
+                <tr>
+                    <th rowspan="2" id="data" headers="blank">Databases & Networking</th>
+                    <td headers="data name">Hubris Hauteur</td>
+                    <td headers="data email">hubris@ARCsnake.com</td>
+                    <td headers="data years">31</td>
+                    <td headers="data salary">$50,000</td>
+                </tr>
+                <tr>
+                    <td headers="data name">Michael Roa Valdamjong</td>
+                    <td headers="data email">orbfellow2000@ARCsnake.com</td>
+                    <td headers="data years">50</td>
+                    <td headers="data salary">$80,000</td>
+                </tr>
+                <tr>
+                    <th id="market" headers="blank">Licensing & Marketing</th>
+                    <td headers="market name">Kei Sagami</td>
+                    <td headers="market email">blademasteria@ARCsnake.com</td>
+                    <td headers="market years">2</td>
+                    <td headers="market salary">$40,000</td>
+                </tr>
+                <tr>
+                    <th colspan="3">Total Years of Service:</th>
+                    <td>167</td>
+                    <td>$7,317,000</td>
+                </tr>
+            </table>
+            <figcaption>Employee Layout</figcaption>
+        </figure>
+    </main>
+    <script src="scripts/includemin.js"></script>
+</body>
+<footer>
+    <div data-include="components/footer.html"></div>
+    <script src="scripts/includemin.js"></script>
+</footer>
+
+</html>
