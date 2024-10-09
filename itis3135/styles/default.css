@@ -52,3 +52,32 @@ th {
 tr:nth-child(odd) {
   background-color: #972d07ad;
 }
+
+form {
+  background-color: #b9372e;
+}
+
+form > fieldset {
+  padding: 20px;
+}
+
+hr {
+  margin: 20px;
+}
+
+fieldset > option {
+  font-weight: bold;
+}
+
+input {
+  margin: 5px;
+}
+
+input[type=radio] {
+ margin-bottom: 1em;
+}
+
+input[type=submit], input[type=reset] {
+  background-color: #972d07;
+  color: #ffe548;
+}
