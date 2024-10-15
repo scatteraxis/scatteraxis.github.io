@@ -15,7 +15,7 @@ html {
   border-radius: 15px;
 }
 
-main, main > p, h2, h3 {
+main, main > p, h2, h3, h4 {
   background-color: #ff4b3e;
   padding: 5px;
   margin: 10px;
