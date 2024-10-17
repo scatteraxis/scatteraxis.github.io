@@ -45,11 +45,11 @@ table, th, td {
   padding: 5px;
 }
 
-th {
+figure > table th {
   background-color: #972d07;
 }
 
-tr:nth-child(odd) {
+figure > table tr:nth-child(odd) {
   background-color: #972d07ad;
 }
 
