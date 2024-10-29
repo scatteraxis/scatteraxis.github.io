@@ -34,6 +34,7 @@
             text-align: center;
             padding: 3px;
             border-radius: 15px;
+            border: 3px solid var(--accent-clr);
         }
 
         section,
@@ -121,6 +122,7 @@
         }
 
         button:hover {
+            cursor: pointer;
             background-color: #918fb7;
         }
 
@@ -131,8 +133,8 @@
 </head>
 <header>
     <div class="header">
-        <h1 class="header">Fighting Games</h1>
-        <nav class="header">
+        <h1><i>Fighting Games</i></h1>
+        <nav>
             <button id="btn1">Home</button>
             <button id="btn2">About Me</button>
             <button id="btn3">When</button>
@@ -156,35 +158,95 @@
             Capcom's <i>Street Fighter</i>, and most iconically its sequel and updates to <i>Street Fighter II</i>.
         </p>
         <p>
-            There are various different types of fighting games. The style of fighting game that most people in the
-            general public think of are "footsie fighters" that stick to a more grounded and slower paced approach to
-            gameplay, similar to <i>Street Fighter II</i> and Midway Games' <i>Mortal Kombat</i>.
+            There are various different types of fighting games:
+        <ul>
+            <li>
+                <b>"Footsies" fighters:</b> Fighting games that stick to a more grounded and slower paced approach
+                to gameplay. Examples include the <i>Street Fighter</i> series and <i>Mortal Kombat</i> series.
+            </li>
+            <li>
+                <b>"Anime" fighters</b>: A term that has been used to refer to fighting games that contain the traits of
+                both an "anime" visual or graphical style, and also a heavy focus on having many universal or
+                character-specific mechanics. This design philosophy dates back to Capcom's <i>Darkstalkers</i> series
+                of games, however it was massively popularized by Arc System Works' <i>Guilty Gear</i> franchise soon
+                after.
+            </li>
+            <li>
+                <b>"3D" fighters:</b> Fighting games that make use of 3D space for the fighters instead of the much more
+                common 2D space. Many of these games forgo certain special mechanics from other genres of fighting games
+                and instead aim for a much more "intense" or "realistic" fighting system based on real-world martial
+                arts and fighting technique.
+            </li>
+        </ul>
         </p>
     </section>
     <section id="section2" class="hidden">
         <h2 class="center">About Me</h2>
         <p>
             My name is Agyei, and I am a 22 year old born and raised in Charlotte, NC, but my parents came to this
-            country from West Africa. I knew fighting games existed for a while as a child, but I never really dived
+            country from Ghana. I knew fighting games existed for a while as a child, but I never really dived
             into one until I stumbled upon the arcade fighting game <i>JoJo's Bizarre Adventure: Heritage for the
                 Future</i>, which was a licensed fighting game based on my favorite manga/anime series (at the time) of
             the same name. This was the first fighting game I ever legitimately tried to get good at, and it kickstarted
             my love for the genre as a whole, though ironically enough I kind of now hate most of the first few fighting
             games I tried to learn.
         </p>
+        <p>
+            To this day I still play fighting games very often if not every day. I like to spend a lot of my free time
+            researching more
+            obscure games in the genre such as various licensed fighting games that severely underdocumented and
+            underrepresented.
+        </p>
     </section>
     <section id="section3" class="hidden">
-        TBD
+        <h2 class="center">When?</h2>
+        <h3>When do I play fighting games?</h3>
+        <p>
+            For me, any time is a good time for playing fighting games, as long as I can find a friend or training
+            partner to play with. If not, any time is also a good time to practice and study the game on my own in
+            training modes. For a real answer,
+        </p>
     </section>
     <section id="section4" class="hidden">
-        TBD
+        <h2 class="center">Where?</h2>
+        <h3>Where do I play fighting games?</h3>
+        <p>
+            You can play most fighting games from the comfort of your room thanks to the Internet, however most fighting
+            game players such as myself like to meet up with friends and other players in real life as they are much
+            better enjoyed socially rather than alone or against faceless opponents. At UNCC, I meet up with my friends
+            just about every day in a common area in the Student Union ("Norm's Loft") to play games, and we also host
+            one event a month for any fighting game players in the area to come get some games, meet people, and have
+            fun.
+        </p>
     </section>
     <section id="section5" class="hidden">
-        TBD
+        <h2 class="center">Why?</h2>
+        <h3>Why do I play fighting games?</h3>
+        <p>
+            I play fighting games because I believe them to be one of the most technically and mechanically interesting
+            genres of games out there, which is very entertaining to me. Many of these games have been played for years
+            and years since they released with absolutely no updates because their core gameplay is so well thought out
+            and facilitates players sticking around to explore the systems for a very, very long time. There is always
+            something interesting to pick out and research in any fighting game, and also so many to go through with. No
+            two fighting games are ever the same, with most of them being only loosely comparable.
+        </p>
+        <p>
+            I'm also very invested in the community aspect of fighting games. The communities for many of these games
+            are all purely in it for the love of the game(s) for what they are and the love of self-improvement in their
+            play. Compared to modern games, it's very refreshing seeing people enjoy a game for what it is over "what it
+            could become" or "what it could have been".
+        </p>
     </section>
     <section id="section6" class="hidden">
         <h2 class="center">How?</h2>
         <h3>How can I get started playing fighting games?</h3>
+        <p>
+            It's as easy to start playing as any other game genre. Find a game that you think looks cool, and you get it
+            and you play it. Most games have a tutorial
+            and some singleplayer modes for you to play, and once you feel like you're adept with them you can then try
+            playing the games versus people online or in person. There are also fighting games on every game system, so
+            they are fairly accessible as well.
+        </p>
     </section>
     <section id="section7" class="hidden">
         <h2 class="center">AI Prompts I Used</h2>
@@ -198,9 +260,9 @@
         function showSection(sectionId) {
             // Get all sections
             const sections = document.querySelectorAll('section[id^="section"]');
-            
+
             // Loop through sections to hide all
-            sections.forEach(section => {
+            sections.forEach((section) => {
                 section.classList.add('hidden');
             });
 
@@ -226,20 +288,24 @@
 </body>
 <footer>
     <div class="footer">
-        <nav class="footer">
+        <nav>
         </nav>
         <b>Designed by SDCX &copy; 2024</b>
         <hr>
-        <b>Certified in <button class="footer"
-                onclick="https://www.freecodecamp.org/certification/scatteraxis/responsive-web-design">Responsive Web
-                Design</button></b>
+        <b>Certified in <a
+                href="https://www.freecodecamp.org/certification/scatteraxis/responsive-web-design"><button>Responsive
+                    Web
+                    Design</button></b></a>
         <br>
-        <a href="http://validator.w3.org/check?uri=referer">
-            <img class="footer" src="images/html_validation_button.gif" alt="Validate HTML">
-        </a>
-        <a href="http://jigsaw.w3.org/css-validator/check/referer">
-            <img class="footer" src="images/validation_button_css_rectangle_blue.gif" alt="Validate CSS">
-        </a>
+        <button>
+            <a href="http://validator.w3.org/check?uri=referer">
+                <img src="images/html_validation_button.gif" alt="Validate HTML">
+            </a>
+        </button>
+        <button><a href="http://jigsaw.w3.org/css-validator/check/referer">
+                <img src="images/validation_button_css_rectangle_blue.gif" alt="Validate CSS">
+            </a>
+        </button>
     </div>
 </footer>
 
