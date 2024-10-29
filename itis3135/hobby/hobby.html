@@ -124,8 +124,8 @@
             background-color: #918fb7;
         }
 
-        .section1 {
-            display: block;
+        .hidden {
+            display: none;
         }
     </style>
 </head>
@@ -133,13 +133,13 @@
     <div class="header">
         <h1 class="header">Fighting Games</h1>
         <nav class="header">
-            <button data-target="section1">Home</button>
-            <button data-target="section2">About Me</button>
-            <button data-target="section3">When</button>
-            <button data-target="section4">Where</button>
-            <button data-target="section5">Why</button>
-            <button data-target="section6">How</button>
-            <button data-target="section7">AI Prompts</button>
+            <button id="btn1">Home</button>
+            <button id="btn2">About Me</button>
+            <button id="btn3">When</button>
+            <button id="btn4">Where</button>
+            <button id="btn5">Why</button>
+            <button id="btn6">How</button>
+            <button id="btn7">AI Prompts</button>
         </nav>
     </div>
 </header>
@@ -161,7 +161,7 @@
             gameplay, similar to <i>Street Fighter II</i> and Midway Games' <i>Mortal Kombat</i>.
         </p>
     </section>
-    <section id="section2">
+    <section id="section2" class="hidden">
         <h2 class="center">About Me</h2>
         <p>
             My name is Agyei, and I am a 22 year old born and raised in Charlotte, NC, but my parents came to this
@@ -173,20 +173,20 @@
             games I tried to learn.
         </p>
     </section>
-    <section id="section3">
+    <section id="section3" class="hidden">
         TBD
     </section>
-    <section id="section4">
+    <section id="section4" class="hidden">
         TBD
     </section>
-    <section id="section5">
+    <section id="section5" class="hidden">
         TBD
     </section>
-    <section id="section6">
+    <section id="section6" class="hidden">
         <h2 class="center">How?</h2>
         <h3>How can I get started playing fighting games?</h3>
     </section>
-    <section id="section7">
+    <section id="section7" class="hidden">
         <h2 class="center">AI Prompts I Used</h2>
         <p>
             "How do I make clicking buttons show only a certain section with javascript and hide all the others if they
@@ -194,25 +194,34 @@
         </p>
     </section>
     <script>
-        function showSection(targetId) {
-            // Hide all sections
-            document.querySelectorAll('div[id^="section"]').forEach((section) => {
-                section.style.display = 'none';
+        // Function to show a specific section and hide others
+        function showSection(sectionId) {
+            // Get all sections
+            const sections = document.querySelectorAll('section[id^="section"]');
+            
+            // Loop through sections to hide all
+            sections.forEach(section => {
+                section.classList.add('hidden');
             });
 
             // Show the selected section
-            const targetSection = document.getElementById(targetId);
+            const targetSection = document.getElementById(sectionId);
             if (targetSection) {
-                targetSection.style.display = 'block';
+                targetSection.classList.remove('hidden');
             }
         }
 
+        // Initialize by showing the first section by default
+        showSection('section1');
+
         // Add event listeners to each button
-        document.querySelectorAll('button[data-target]').forEach((button) => {
-            button.addEventListener('click', function() {
-                showSection(this.dataset.target);
-            });
-        });
+        document.getElementById('btn1').addEventListener('click', () => showSection('section1'));
+        document.getElementById('btn2').addEventListener('click', () => showSection('section2'));
+        document.getElementById('btn3').addEventListener('click', () => showSection('section3'));
+        document.getElementById('btn4').addEventListener('click', () => showSection('section4'));
+        document.getElementById('btn5').addEventListener('click', () => showSection('section5'));
+        document.getElementById('btn6').addEventListener('click', () => showSection('section6'));
+        document.getElementById('btn7').addEventListener('click', () => showSection('section7'));
     </script>
 </body>
 <footer>
