@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta assignments -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fighting Games Hobby Page</title>
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+    <!-- Embedded Stylesheet -->
+    <style>
+        :root {
+            --bg-clr: #8c001a;
+            --card-clr: #46418f;
+            --nav-clr: #6b1f59;
+            --accent-clr: #f4d35e;
+            --text-clr: #eec793;
+        }
+
+        html {
+            font-family: sans-serif;
+            background-color: var(--bg-clr);
+            color: var(--text-clr);
+        }
+
+        .hr {
+            height: 5px;
+            background-color: #972d07;
+        }
+
+        .header,
+        .footer {
+            background-color: var(--nav-clr);
+            text-align: center;
+            padding: 3px;
+            border-radius: 15px;
+        }
+
+        section,
+        section>p,
+        h2,
+        h3,
+        h4 {
+            background-color: var(--card-clr);
+            padding: 5px;
+            margin: 10px 10px 10px 15px;
+            border-radius: 15px;
+        }
+
+        section>ul>li {
+            background-color: var(--card-clr);
+            padding: 0;
+            margin: 10px;
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        .center-img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 150px;
+            height: 200px;
+        }
+
+        table,
+        th,
+        td {
+            border: 3px solid black;
+            padding: 5px;
+        }
+
+        figure>table th {
+            background-color: #972d07;
+        }
+
+        figure>table tr:nth-child(odd) {
+            background-color: var(--bg-clr);
+        }
+
+        form {
+            background-color: #b9372e;
+        }
+
+        form>fieldset {
+            padding: 20px;
+        }
+
+        hr {
+            margin: 10px;
+        }
+
+        fieldset>option {
+            font-weight: bold;
+        }
+
+        input {
+            margin: 5px;
+        }
+
+        input[type=radio] {
+            margin-bottom: 1em;
+        }
+
+        input[type=submit],
+        input[type=reset] {
+            background-color: #972d07;
+            color: #ffe548;
+        }
+
+        button {
+            border: 3px solid black;
+            border-radius: 10px;
+            border-color: var(--accent-clr);
+            color: var(--accent-clr);
+            background-color: var(--card-clr);
+            font-size: 1.1rem;
+            padding: 5px;
+        }
+
+        button:hover {
+            background-color: #918fb7;
+        }
+    </style>
+</head>
+<header>
+    <div class="header">
+        <h1 class="header">Fighting Games</h1>
+        <nav class="header">
+            <button id="toggle-btn" data-target="home">Home</button>
+            <button id="toggle-btn" data-target="about-me">About Me</button>
+            <button id="toggle-btn" data-target="when">When</button>
+            <button id="toggle-btn" data-target="where">Where</button>
+            <button id="toggle-btn" data-target="why">Why</button>
+            <button id="toggle-btn" data-target="how">How</button>
+            <button id="toggle-btn" data-target="ai-prompts">AI Prompts</button>
+        </nav>
+    </div>
+</header>
+
+<body>
+    <section id="home">
+        <h2 class="center">Home</h2>
+        <h3>What are fighting games?</h3>
+        <p>
+            Fighting games are a type of action video game where the core of the gameplay features combat between two or
+            more
+            players fighting each other on screen. This gameplay style was widely popularized by the commercial success
+            of
+            Capcom's <i>Street Fighter</i>, and most iconically its sequel and updates to <i>Street Fighter II</i>.
+        </p>
+        <p>
+            There are various different types of fighting games. The style of fighting game that most people in the
+            general public think of are "footsie fighters" that stick to a more grounded and slower paced approach to
+            gameplay, similar to <i>Street Fighter II</i> and Midway Games' <i>Mortal Kombat</i>.
+        </p>
+    </section>
+    <section id="about-me">
+        <h2 class="center">About Me</h2>
+        <p>
+            My name is Agyei, and I am a 22 year old born and raise in Charlotte, NC, but my parents came to this
+            country from West Africa. I knew fighting games existed for a while as a child, but I never really dived
+            into one until I stumbled upon the arcade fighting game <i>JoJo's Bizarre Adventure: Heritage for the
+                Future</i>, which was a licensed fighting game based on my favorite manga/anime series (at the time) of
+            the same name. This was the first fighting game I ever legitimately tried to get good at, and it kickstarted
+            my love for the genre as a whole, though ironically enough I kind of now hate most of the first few fighting
+            games I tried to learn.
+        </p>
+    </section>
+    <section id="when">
+        dude
+    </section>
+    <section id="where">
+        dude
+    </section>
+    <section id="why">
+        dude
+    </section>
+    <section id="how">
+        <h2 class="center">How?</h2>
+        <h3>How can I get started playing fighting games?</h3>
+    </section>
+    <section id="ai-prompts">
+        <h2 class="center">AI Prompts I Used</h2>
+        <p>
+            "How do I make clicking buttons show only a certain section with javascript and hide all the others if they
+            arent selected"
+        </p>
+    </section>
+    <script>
+        document.querySelectorAll('.toggle-btn').forEach(button => {
+            button.addEventListener('click', function () {
+                // Hide all sections
+                document.querySelectorAll('div[id^="section"]').forEach(section => {
+                    section.style.display = 'none';
+                });
+
+                // Show the selected section
+                const targetSection = document.getElementById(this.dataset.target);
+                targetSection.style.display = 'block';
+            });
+        });
+    </script>
+</body>
+<footer>
+    <div class="footer">
+        <nav class="footer">
+        </nav>
+        <b>Designed by SDCX &copy; 2024</b>
+        <hr>
+        <b>Certified in <button class="footer"
+                onclick="https://www.freecodecamp.org/certification/scatteraxis/responsive-web-design">Responsive Web
+                Design</button></b>
+        <br>
+        <a href="http://validator.w3.org/check?uri=referer">
+            <img class="footer" src="images/html_validation_button.gif" alt="Validate HTML">
+        </a>
+        <a href="http://jigsaw.w3.org/css-validator/check/referer">
+            <img class="footer" src="images/validation_button_css_rectangle_blue.gif" alt="Validate CSS">
+        </a>
+    </div>
+</footer>
+
+</html>
