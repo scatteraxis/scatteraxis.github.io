@@ -129,13 +129,13 @@
     <div class="header">
         <h1 class="header">Fighting Games</h1>
         <nav class="header">
-            <button id="toggle-btn" data-target="home">Home</button>
-            <button id="toggle-btn" data-target="about-me">About Me</button>
-            <button id="toggle-btn" data-target="when">When</button>
-            <button id="toggle-btn" data-target="where">Where</button>
-            <button id="toggle-btn" data-target="why">Why</button>
-            <button id="toggle-btn" data-target="how">How</button>
-            <button id="toggle-btn" data-target="ai-prompts">AI Prompts</button>
+            <button data-target="home">Home</button>
+            <button data-target="about-me">About Me</button>
+            <button data-target="when">When</button>
+            <button data-target="where">Where</button>
+            <button data-target="why">Why</button>
+            <button data-target="how">How</button>
+            <button data-target="ai-prompts">AI Prompts</button>
         </nav>
     </div>
 </header>
@@ -160,7 +160,7 @@
     <section id="about-me">
         <h2 class="center">About Me</h2>
         <p>
-            My name is Agyei, and I am a 22 year old born and raise in Charlotte, NC, but my parents came to this
+            My name is Agyei, and I am a 22 year old born and raised in Charlotte, NC, but my parents came to this
             country from West Africa. I knew fighting games existed for a while as a child, but I never really dived
             into one until I stumbled upon the arcade fighting game <i>JoJo's Bizarre Adventure: Heritage for the
                 Future</i>, which was a licensed fighting game based on my favorite manga/anime series (at the time) of
@@ -190,16 +190,23 @@
         </p>
     </section>
     <script>
-        document.querySelectorAll('.toggle-btn').forEach(button => {
-            button.addEventListener('click', function () {
-                // Hide all sections
-                document.querySelectorAll('div[id^="section"]').forEach(section => {
-                    section.style.display = 'none';
-                });
+        function showSection(targetId) {
+            // Hide all sections
+            document.querySelectorAll('div[id^="section"]').forEach(section => {
+                section.style.display = 'none';
+            });
 
-                // Show the selected section
-                const targetSection = document.getElementById(this.dataset.target);
+            // Show the selected section
+            const targetSection = document.getElementById(targetId);
+            if (targetSection) {
                 targetSection.style.display = 'block';
+            }
+        }
+
+        // Add event listeners to each button
+        document.querySelectorAll('button[data-target]').forEach(button => {
+            button.addEventListener('click', function() {
+                showSection(this.dataset.target);
             });
         });
     </script>
