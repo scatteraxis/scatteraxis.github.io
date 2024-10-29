@@ -196,7 +196,7 @@
     <script>
         function showSection(targetId) {
             // Hide all sections
-            document.querySelectorAll('div[id^="section"]').forEach(section => {
+            document.querySelectorAll('div[id^="section"]').forEach((section) => {
                 section.style.display = 'none';
             });
 
@@ -208,7 +208,7 @@
         }
 
         // Add event listeners to each button
-        document.querySelectorAll('button[data-target]').forEach(button => {
+        document.querySelectorAll('button[data-target]').forEach((button) => {
             button.addEventListener('click', function() {
                 showSection(this.dataset.target);
             });
