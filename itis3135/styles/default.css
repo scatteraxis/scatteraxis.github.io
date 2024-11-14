@@ -3,6 +3,27 @@ html {
   background-color: #972d07;
 }
 
+/* Rule Overrides For Laptops / Small Screens */
+@media screen and ( min-width: 981px ) and ( max-width: 1400px ) {
+  main {
+    width: 90%;
+  }
+}
+
+/* Rule Overrides For Tablet Devices */
+@media screen and ( min-width: 601px ) and ( max-width: 980px )  {
+  main {
+    width: 90%;
+  }
+}
+
+/* Rule Overrides For Mobile Devices */
+@media screen and ( min-width: 370px ) and ( max-width: 600px ) {
+  main {
+      width: 90%;
+  }
+}
+
 .hr {
   height: 5px;
   background-color: #972d07;
@@ -16,16 +37,18 @@ html {
 }
 
 main, main > p, h2, h3, h4 {
+  max-width: 1200px;
+  width: 90%;
   background-color: #ff4b3e;
   padding: 5px;
-  margin: 10px;
+  margin: 10px auto;
   border-radius: 15px;
 }
 
 main > ul > li {
   background-color: #ff4b3e;
   padding: 0;
-  margin: 10px;
+  margin: 10px auto;
 }
 
 .center {
