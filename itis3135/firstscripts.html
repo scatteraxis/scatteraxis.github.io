@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agyei Sraha's First Javascript Page</title>
     <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+    <script src="scripts/defaultscripts.js"></script>
     <!-- Header content -->
 </head>
 <header>
@@ -15,8 +16,38 @@
 </header>
 <body>
     <main>
+        <h2 class="center">First Scripts</h2>
+        <h3 id="current-time"></h3>
+        <h3 id="welcome-present"></h3>
         <p>
-            I am Agyei Sraha and this is my ITIS-3135 initial Javascript page.
+            Enter your name: <input id="name"> <br>
+            Enter your mood: <input id="mood"> <br>
+            <input type="submit" id="welcome-submit">
+        </p>
+        <hr>
+        <p>
+            Enter a number between -10 and 10: <br>
+            <input id="number" type="text" min="-10" max="10"> 
+            <button id="number-submit">Return Polygon</button>
+        </p>
+        <hr>
+        <p>
+            Enter the square footage of area you're looking to fill with cabinets: <br>
+            <input id="area" type="text"> 
+            <button id="area-submit">Submit</button> <br>
+            <span id="area-usage"></span>
+        </p>
+        <hr>
+        <p>
+            Enter an amount for the NC state tax to be calculated on: <br>
+            <input id="taxable" type="text"> 
+            <button id="taxable-submit">Submit</button> <br>
+            <span id="tax-total"></span>
+        </p>
+        <hr>
+        <p>
+            <button id="random-parts">Click for a randomized set of cabinet parts</button> <br>
+            <span id="random-parts-output"></span>
         </p>
     </main>
     <script src="scripts/includemin.js"></script>
