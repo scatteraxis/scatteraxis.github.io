@@ -65,7 +65,7 @@ document.addEventListener("DOMContentLoaded", () => {
             3: "Boa",
             4: "Viper",
             5: "Garter",
-            6: "Mamba",
+            6: "Mamba"
         };
 
         randomPartsOutput.innerHTML = `You could try ordering ${partsStorage[Math.round(Math.random() * 6)]} style sticks and ${partsStorage[Math.round(Math.random() * 6)]} style buttons for your arcade cabinets.`;
