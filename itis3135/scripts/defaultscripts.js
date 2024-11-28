@@ -68,7 +68,7 @@ document.addEventListener("DOMContentLoaded", () => {
             6: "Mamba"
         };
 
-        randomPartsOutput.innerHTML = `You could try ordering ${partsStorage[Math.round(Math.random() * 6)]} style sticks and ${partsStorage[Math.round(Math.random() * 6)]} style buttons for your arcade cabinets.`;
+        randomPartsOutput.innerHTML = `You could try ordering <b>${partsStorage[Math.round(Math.random() * 6)]}</b> style sticks and <b>${partsStorage[Math.round(Math.random() * 6)]}</b> style buttons for your arcade cabinets.`;
     });
 
 });
