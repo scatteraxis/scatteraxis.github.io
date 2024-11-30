@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="styles/default.css">
+
+<head>
+    <!-- Meta assignments -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Design and Consultation</title>
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+    <!-- Embedded Stylesheet -->
+    <style>
+        :root {
+            --bg-clr: #ec7357;
+            --card-clr: #fdd692;
+            --nav-clr: #d77a61;
+            --accent-clr: #854d27;
+            --text-clr: #4d342d;
+        }
+
+        html {
+            font-family: sans-serif;
+            background-color: var(--bg-clr);
+            color: var(--text-clr);
+        }
+
+        .hr {
+            height: 5px;
+            background-color: var(--bg-clr);
+        }
+
+        .header,
+        .footer {
+            background-color: var(--nav-clr);
+            text-align: center;
+            padding: 4px;
+            border: 3px solid var(--accent-clr);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .header > h1 {
+            border: none;
+            box-shadow: none;
+        }
+
+        .header > h2 {
+            background-color: none;
+            border: 3px solid var(--accent-clr);
+            border-radius: 0;
+            margin: 10px auto;
+            width: 50%;
+        }
+
+        main {
+            width: 70%;
+            background-color: var(--card-clr);
+            margin: 10px auto;
+            border: 3px solid var(--accent-clr);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+
+        main>p,
+        h2,
+        h3,
+        h4 {
+            background-color: var(--card-clr);
+            padding: 5px;
+            margin: 10px 10px 10px 15px;
+            border-radius: 15px;
+        }
+
+        main>ul {
+            list-style-type: square;
+        }
+
+        main>ul>li {
+            background-color: var(--card-clr);
+            padding: 0;
+            margin: 10px;
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        .center-img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 150px;
+            height: 200px;
+        }
+
+        table,
+        th,
+        td {
+            border: 3px solid black;
+            padding: 5px;
+        }
+
+        figure>table th {
+            background-color: #972d07;
+        }
+
+        figure>table tr:nth-child(odd) {
+            background-color: var(--bg-clr);
+        }
+
+        form {
+            background-color: #b9372e;
+        }
+
+        form>fieldset {
+            padding: 20px;
+        }
+
+        hr {
+            margin: 10px;
+        }
+
+        fieldset>option {
+            font-weight: bold;
+        }
+
+        input {
+            margin: 5px;
+        }
+
+        input[type=radio] {
+            margin-bottom: 1em;
+        }
+
+        input[type=submit],
+        input[type=reset] {
+            background-color: #972d07;
+            color: #ffe548;
+        }
+
+        button {
+            border: 3px solid black;
+            border-radius: 10px;
+            border-color: var(--accent-clr);
+            color: var(--accent-clr);
+            background-color: var(--card-clr);
+            font-size: 1.1rem;
+            padding: 5px;
+        }
+
+        button:hover {
+            cursor: pointer;
+            background-color: #918fb7;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        figure>img {
+            border: 5px solid black;
+            border-radius: 10px;
+            border-color: var(--accent-clr);
+            max-width: 90%;
+        }
+
+        figcaption {
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<header>
+    <div class="header">
+        <h1 class="header">Srahaxis Design Corpus X</h1>
+        <img src="images/disc.png" width="200" height="100" alt="SDCX logo">
+        <h2 class="center">"The Dominant Design Corp"</h2>
+    </div>
+</header>
+<body>
+    <main>
+        <h2 class="center">SDCX's Services</h2>
+        <p>
+            This is the main website for SDCX, one of the leading companies in website design and consultation. We are a relatively new company, but we have many seasoned web design veterans on our team ready to assist you with any of your web design needs.
+        </p>
+        <ul>
+            <li>JavaScript functionality and interactivity</li>
+            <li>Seamless loading</li>
+            <li>Competent databasing (storage and retrieval) of user data</li>
+            <li>Specializing ease of use depending on management/maintainer/customer needs is at our forefront</li>
+            <li>We provide documentation of the internals of websites we create for you</li>
+        </ul>
+        <p>
+            Our company would like to build websites for your business, tweak existing websites to meet CRAP principles, or give advice on how to go about building our quality of websites yourself.
+        </p>
+        <h3>Contact:</h3>
+        <p>
+            <b>Email:</b> SDCX@gmail.com <br>
+            <b>Phone:</b> 704-623-6469 <br>
+        </p>
+    </main>
+</body>
+<footer>
+    <div class="footer">
+        <b>Page created by Agyei Sraha</b>
+        <br>
+        <b>Certified in <a href="https://www.freecodecamp.org/certification/scatteraxis/responsive-web-design">Responsive Web Design</a></b> and <b><a href="https://www.freecodecamp.org/certification/scatteraxis/javascript-algorithms-and-data-structures-v8">JavaScript Algorithms</a></b>
+        <br>
+        <a href="http://validator.w3.org/check?uri=referer">
+            <img src="../images/html_validation_button.gif" alt="Validate HTML">
+        </a>
+        <a href="http://jigsaw.w3.org/css-validator/check/referer">
+            <img src="../images/validation_button_css_rectangle_blue.gif" alt="Validate CSS">
+        </a>
+    </div>
+</footer>
+
+</html>
