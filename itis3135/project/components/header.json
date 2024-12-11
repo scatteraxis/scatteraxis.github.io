@@ -1,0 +1,12 @@
+{
+  "header": {
+    "title": "Prince Architecture",
+    "links": [
+      { "name": "Home", "url": "./index.html" },
+      { "name": "About", "url": "./about.html" },
+      { "name": "Projects", "url": "./projects.html" },
+      { "name": "Design Process", "url": "./process.html" },
+      { "name": "Contact", "url": "./contact.html" }
+    ]
+  }
+}
