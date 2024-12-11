@@ -5,8 +5,8 @@
     "link": "https://sdcx.co",
     "year": "2024",
     "validation": {
-      "html": "https://validator.w3.org/#validate_by_html",
-      "css": "https://jigsaw.w3.org/css-validator/",
+      "html": "https://validator.w3.org/nu/?doc=https%3A%2F%2Fwebpages.charlotte.edu%2Fasraha%2Fitis3135%2Fproject%2F",
+      "css": "https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fwebpages.charlotte.edu%2Fasraha%2Fitis3135%2Fproject%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en",
       "wcag": "https://www.w3.org/WAI/WCAG21/quickref/"
     }
   }
