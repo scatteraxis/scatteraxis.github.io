@@ -159,6 +159,7 @@ h1 {
     border-radius: 4px;
     border: 3px solid black;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: background-color 0.3s, color 0.3s;
 }
 
 @media (max-width: 700px) {
@@ -317,4 +318,32 @@ figure > img {
 
 figcaption {
     font-size: 0.9rem;
+}
+
+.validation-buttons {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.validation-button {
+    padding: 10px 15px;
+    background-color: var(--card-clr);
+    color: var(--text-clr);
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+    border: 3px solid black;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.validation-button:hover {
+    background-color: var(--accent-clr-2);
+    color: var(--hover-clr);
+}
+
+.validation-button:active {
+    background-color: var(--accent-clr);
 }

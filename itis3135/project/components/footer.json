@@ -1,8 +1,13 @@
 {
-    "footer": {
-      "text": "Designed by",
-      "designer": "SDCX",
-      "link": "https://sdcx.co",
-      "year": "2024"
+  "footer": {
+    "text": "Designed by",
+    "designer": "SDCX",
+    "link": "https://sdcx.co",
+    "year": "2024",
+    "validation": {
+      "html": "https://validator.w3.org/#validate_by_html",
+      "css": "https://jigsaw.w3.org/css-validator/",
+      "wcag": "https://www.w3.org/WAI/WCAG21/quickref/"
     }
   }
+}
